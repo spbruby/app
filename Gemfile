@@ -22,6 +22,8 @@ gem "inherited_resources", :git => "git://github.com/josevalim/inherited_resourc
 gem "devise", :git => "git://github.com/plataformatec/devise.git", :ref => '5f2a19d7844abf341ab355bfd7de21ae861c1aae'
 gem "simple_form", :git => "git://github.com/plataformatec/simple_form.git", :ref => '35f9c01324fb2cb42dbede7f6482b9212f2eba5f'
 gem 'show_for', :git => "git://github.com/plataformatec/show_for.git", :tag => 'v0.2.2'
+gem 'mail_form', :git => "git://github.com/plataformatec/mail_form.git", :tag => 'v1.3.0'
+
 
 # Bundle gems for certain environments:
 # gem 'rspec', :group => :test

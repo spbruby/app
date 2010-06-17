@@ -4,6 +4,7 @@ App::Application.routes.draw do |map|
     resources :meetings
   end
 
+  resources :feedback_messages
   root :to => 'meetings#current'
 
   # The priority is based upon order of creation:

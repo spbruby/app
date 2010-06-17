@@ -1,0 +1,5 @@
+- if @meeting
+  = show_for @meeting do |m|
+    = m.attribute :title
+    = m.attribute :date, :format => :short
+    = m.attribute :description

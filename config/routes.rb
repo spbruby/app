@@ -1,4 +1,8 @@
 App::Application.routes.draw do |map|
+  devise_for :admins
+
+  devise_for :users
+
 
   namespace :admin do
     resources :meetings

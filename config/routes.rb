@@ -8,6 +8,8 @@ App::Application.routes.draw do |map|
     resources :meetings
   end
 
+  root :to => 'meetings#current'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

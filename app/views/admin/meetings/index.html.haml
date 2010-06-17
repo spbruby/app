@@ -1,1 +1,8 @@
 = link_to 'Add Meeting', new_admin_meeting_path
+
+- @meetings.each do |meeting|
+  = show_for meeting do |m|
+    = m.attribute :title
+    = m.attribute :date, :format => :short
+
+    = link_to 'Edit', edit_admin_meeting_path(meeting)

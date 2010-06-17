@@ -12,7 +12,7 @@ context 'When I go to the meetings admin page' do
 
     context 'but do not enter all required details' do
       before(:each) do
-        click_button 'Add'
+        click_button 'Save'
       end
 
       it 'should display error messages' do
@@ -25,7 +25,7 @@ context 'When I go to the meetings admin page' do
         fill_in 'Date', :with => '18 June 2010'
         fill_in 'Title', :with => 'We loooove (*squirt*) plataformatec!'
         fill_in 'Description', :with => 'Whatever!'
-        click_button 'Add'
+        click_button 'Save'
       end
 
       it 'should display a confirmation message' do

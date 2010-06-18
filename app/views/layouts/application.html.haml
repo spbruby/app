@@ -6,5 +6,57 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
-    #flash= flash.notice
-    = yield
+    #wrapper
+      #header
+        #logo
+          %h1
+            = link_to 'SPBRUBY', root_path
+          %p сообщество ruby-программистов
+      #menu
+        %ul
+          %li.current_page_item
+            = link_to 'Главная', root_path
+          %li
+            = link_to 'Архив', meetings_path
+          %li
+            = link_to 'Обратная связь', new_feedback_message_path
+
+      #page
+        #page-bgtop
+          #page-bgbtm
+            #content
+              #flash= flash.notice
+
+              = yield
+
+              .post
+                %h2.title Заголовок
+                %p.meta
+                  %span.date Дата
+                  %span.posted Автор
+                %div{:style => 'clear: both'}
+                .entry
+                  %p Текст
+                  %p.links Ссылки
+
+              %div{:style => 'clear: both'}
+            #sidebar
+              %ul
+                %li
+                  #search
+                    %form
+                      %div
+                        = text_field_tag :search, nil, :id => 'search-text'
+                        = submit_tag 'GO', :id => 'search-submit'
+
+                  %div{:style => 'clear: both'}
+                %li
+                  %h2
+                    Заголовок
+                  %ul
+                    %li= link_to 'Ссылка', '#'
+
+            %div{:style => 'clear: both'}
+      #footer
+        %p
+          Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>

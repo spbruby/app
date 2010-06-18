@@ -8,6 +8,7 @@ App::Application.routes.draw do |map|
     resources :meetings
   end
 
+  resources :meetings
   resources :feedback_messages
   root :to => 'meetings#current'
 

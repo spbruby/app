@@ -8,3 +8,6 @@ ru:
       destroy:
         notice: "Успешно удалили %{resource_name}"
         alert: "Не получается удалить %{resource_name}"
+    feedback_messages:
+      create:
+        notice: 'Сообщение было отправлено'

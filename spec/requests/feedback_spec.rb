@@ -7,10 +7,10 @@ context "When I feel like sending some feedback" do
 
   context 'and I fill in all requried details' do
     before(:each) do
-      fill_in :name, :with => 'Name'
+      fill_in 'Имя', :with => 'Name'
       fill_in :email, :with => 'email@address.com'
-      fill_in :message, :with => 'Hello World'
-      click_button 'Send'
+      fill_in 'Сообщение', :with => 'Hello World'
+      click_button 'Отправить'
     end
 
     it 'should send the message and display a confirmation message' do
@@ -18,7 +18,7 @@ context "When I feel like sending some feedback" do
       email.to.should == ['admin@spbruby.org']
       email.subject.should == 'Feedback from Name'
       email.from.should == ['email@address.com']
-      response.should contain('Feedback message was successfully created')
+      response.should contain('Сообщение было отправлено')
     end
   end
 end

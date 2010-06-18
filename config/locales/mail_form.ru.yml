@@ -1,0 +1,12 @@
+ru:
+  mail_form:
+    models:
+      feedbak_message: "Сообщение"
+    attributes:
+      feedback_message:
+        name: "Имя"
+        message: "Сообщение"
+    request:
+      title: "Информация о пользователе"
+      remote_ip: "IP Адрес"
+      user_agent: "Браузер"

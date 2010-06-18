@@ -1,0 +1,11 @@
+ru:
+  activerecord:
+    models:
+      meeting: Встреча
+    attributes:
+      meeting:
+        title: Тема
+        date: Дата
+        description: Описание
+        published: Опубликовано
+        presenters: Выступающие

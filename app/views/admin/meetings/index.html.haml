@@ -3,6 +3,8 @@
 - @meetings.each do |meeting|
   = show_for meeting do |m|
     = m.attribute :title, :label => false
+    = m.attribute :description, :if_blank => 'Пока не добавили'
     = m.attribute :date, :format => :short
+    = m.association :presenters, :to_sentence => true
 
     = link_to 'Изменить', edit_admin_meeting_path(meeting)

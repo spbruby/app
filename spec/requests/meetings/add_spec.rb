@@ -22,14 +22,14 @@ context 'When I go to the meetings admin page' do
 
     context 'and provide valid details' do
       before(:each) do
-        fill_in 'Date', :with => '18 June 2010'
-        fill_in 'Title', :with => 'We loooove (*squirt*) plataformatec!'
-        fill_in 'Description', :with => 'Whatever!'
+        fill_in 'Дата', :with => '18 June 2010'
+        fill_in 'Тема', :with => 'We loooove (*squirt*) plataformatec!'
+        fill_in 'Описание', :with => 'Whatever!'
         click_button 'Сохранить'
       end
 
       it 'should display a confirmation message' do
-        response.should contain('Успешно добавили Meeting')
+        response.should contain('Успешно добавили')
         response.should contain('We loooove')
       end
     end

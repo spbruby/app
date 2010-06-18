@@ -10,12 +10,12 @@ context 'Given there is a meeting' do
       visit admin_meetings_path
       click_link 'Изменить'
 
-      fill_in :title, :with => 'New Title'
+      fill_in 'Тема', :with => 'New Title'
       click_button 'Сохранить'
     end
 
     it 'should display a confirmation message' do
-      response.should contain('Успешно обновили Meeting')
+      response.should contain('Успешно обновили')
       response.should contain('New Title')
     end
   end

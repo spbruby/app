@@ -2,4 +2,6 @@
   = f.input :date
   = f.input :title
   = f.input :description
+  = f.input :published
+  = f.association :presenters, :as => :check_boxes
   = f.submit 'Сохранить'

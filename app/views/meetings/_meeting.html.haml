@@ -1,0 +1,8 @@
+= show_for meeting do |m|
+  .meta.clearfix
+    = m.attribute :title, :label => false
+    = m.attribute :date, :format => :short, :label => false
+  .entry
+    = m.attribute :description, :label => false
+  .links
+    = link_to 'Предыдущие встречи', meetings_path

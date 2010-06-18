@@ -1,0 +1,7 @@
+%h2 Прошедшие встречи
+
+- @meetings.each do |meeting|
+  = show_for meeting do |m|
+    = m.attribute :title
+    = m.attribute :date
+    = link_to 'Подробнее', meeting_path(meeting)

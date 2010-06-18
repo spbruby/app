@@ -1,0 +1,19 @@
+ru:
+  simple_form:
+    "yes": 'Да'
+    "no": 'Нет'
+    required:
+      text: 'Поле обязательно к заполнению'
+      mark: '*'
+    labels:
+      user:
+        name: 'Имя'
+        email: 'E-mail'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+        edit:
+          name: 'Изменить имя'
+          email: 'Изменить E-mail'
+        hints:
+          user:
+            name: 'Максимальная длина имени - 100 символов'%

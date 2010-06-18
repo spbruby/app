@@ -23,40 +23,27 @@
 
       #page
         #page-bgtop
-          #page-bgbtm
-            #content
+          #page-bgbtm.clearfix
+            #content.clearfix
               #flash= flash.notice
 
               = yield
 
-              .post
-                %h2.title Заголовок
-                %p.meta
-                  %span.date Дата
-                  %span.posted Автор
-                %div{:style => 'clear: both'}
-                .entry
-                  %p Текст
-                  %p.links Ссылки
-
-              %div{:style => 'clear: both'}
             #sidebar
               %ul
                 %li
-                  #search
+                  #search.clearfix
                     %form
                       %div
                         = text_field_tag :search, nil, :id => 'search-text'
                         = submit_tag 'GO', :id => 'search-submit'
 
-                  %div{:style => 'clear: both'}
                 %li
                   %h2
                     Заголовок
                   %ul
                     %li= link_to 'Ссылка', '#'
 
-            %div{:style => 'clear: both'}
       #footer
         %p
           Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>

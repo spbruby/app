@@ -1,7 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Mayor.create(:name => 'Daley', :city => cities.first)
+Meeting.create(
+  :title => 'Rack, Warden, Plataformatec',
+  :date  => Date.parse('18 June 2010'),
+  :description => 'Вероятно, практически все Rails-разработчики знают Жозе Валима и бразильскую компанию Plataforma Tecnologia хотя бы потому, что пользуются одним или несколькими инструментами, которые они разработали. Они сильно облегчают жизнь, берут на себя большую часть рутинной работы, но в то же время ненавязчивы и конфигурируемы (например, по понятным причинам разработаны с обязательной поддержкой I18N).'
+)
